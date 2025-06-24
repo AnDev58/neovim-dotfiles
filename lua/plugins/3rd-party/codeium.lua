@@ -2,7 +2,7 @@ return {
 	"Exafunction/windsurf.vim",
 	event = "BufEnter",
 	keys = {
-		{ "<leader>ct", ":CodeiumToggle <CR>", mode = { "n", "i" }, desc = "Toggle Codeium AI" },
+		{ "\\ct", ":CodeiumToggle <CR>", mode = { "n", "i" }, desc = "Toggle Codeium AI" },
 	},
 	config = function()
 		vim.g.codeium_enabled = false
