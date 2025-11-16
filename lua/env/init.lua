@@ -1,0 +1,1 @@
+vim.env.DEEPSEEK_API_KEY = "sk-ac3c823b89b94384b71a64eb003009ed"

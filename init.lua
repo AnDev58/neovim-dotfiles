@@ -1,3 +1,4 @@
+require("env")
 require("ui")
 require("keys")
 require("behaivor")
