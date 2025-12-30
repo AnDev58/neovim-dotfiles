@@ -6,5 +6,5 @@ return {
 		{ "williamboman/mason.nvim", opts = {} },
 	},
 
-	opts = {},
+	opts = { automatic_enable = { exclude = "gopls" } },
 }
