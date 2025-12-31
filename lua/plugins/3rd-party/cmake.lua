@@ -1,10 +1,10 @@
 return {
 	"Civitasv/cmake-tools.nvim",
-	event = "VeryLazy",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"mfussenegger/nvim-dap",
 	},
+	event = "LazyProject:cmake",
 	config = function()
 		require("cmake-tools").setup({
 			cmake_build_directory = "build",

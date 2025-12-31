@@ -18,12 +18,19 @@ vim.opt.rtp:prepend(lazypath)
 vim.g.mapleader = " "
 vim.g.maplocalleader = "\\"
 
+-- Set up events
+vim.g.lazy_events_config = require("plugins/events")
+
 -- Setup lazy.nvim
 require("lazy").setup({
 	spec = {
+		{ "bwpge/lazy-events.nvim", import = "lazy-events.import", lazy = false },
+
 		{ import = "plugins/lsp" },
 		{ import = "plugins/highlight" },
 		{ import = "plugins/format" },
+
+		{ import = "plugins/debug" },
 
 		{ import = "plugins/ui" },
 
